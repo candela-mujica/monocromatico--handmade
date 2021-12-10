@@ -1,0 +1,15 @@
+.block__footer{
+    background-color: #a67250;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@for $i from 1 through 3{
+	.ícono-#{$i}{
+		max-width: 64px;
+        padding: 8px;
+	}
+}

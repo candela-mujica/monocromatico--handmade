@@ -1,0 +1,19 @@
+.contenido__contacto{
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+        .contacto__form{
+            width: 50%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        .contacto__h1{
+            @extend .h1;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+        }
+        .contacto__section{
+            padding-bottom: 20px;
+        }
+}

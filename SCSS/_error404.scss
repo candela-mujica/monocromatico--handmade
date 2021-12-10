@@ -1,0 +1,26 @@
+.contenido__error{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+        .error__h1{
+            @extend .h1;
+            color: red;
+            padding-bottom: 16px;
+        }
+        .error__p{
+            font-size: 3rem;
+            color: #40290d;
+        }
+        .error__link{
+            text-decoration: underline;
+            color: #40290d;
+            font-size: 2rem;
+        }
+        .error__foto{
+            padding-top: 20px;
+        }
+}

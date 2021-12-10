@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Contacto</title>
+    <meta name="robots" content="noindex">
+</head>
+<body>
+   <!-- inicia nav -->
+   <nav class="navbar navbar-expand-lg navbar-light block__nav">
+    <div class="container-fluid nav__menú">
+      <a class="navbar-brand" href="index.html">
+      <img src="Imagenes/Logo.webp" alt="logo monocromático handmade" width="40%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item nav__menú">
+            <a class="nav-link" id="nav__menú" href="index.html">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item dropdown nav__menú">
+            <a class="nav-link dropdown-toggle" id="nav__menú" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bijouterie
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Anillos.html">Anillos</a></li>
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Aritos.html">Aritos</a></li>
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Collares y holders.html">Collares y holders</a></li>
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Pulseras.html">Pulseras</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown nav__menú">
+            <a class="nav-link dropdown-toggle" id="nav__menú" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ropa
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Barbijos.html">Barbijos</a></li>
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Buzos.html">Buzos</a></li>
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Remeras.html">Remeras</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown nav__menú">
+            <a class="nav-link dropdown-toggle" id="nav__menú" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Ofertas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Combos.html">Combos</a></li>
+              <li><a class="dropdown-item nav__secciones p" id="nav__menú" href="Descuentos.html">Descuentos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="nav__menú" href="Contacto.html">
+              Contacto
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+        </ul>
+      </div>
+    </div>
+   </nav>
+   <!-- termina nav -->
+    <section class="contenido__contacto">
+        <h1 class="contacto__h1">Consultá por tu prenda o accesorio personalizado!</h1>
+        <form class="contacto__form">
+            <section class="contacto__section">
+                <label for="nombre_apellido" class="p">Nombre:</label>
+                <input type="text" name="nombre_apellido"/><br>
+                <label for="email" class="p">Email:</label>
+                <input type="email" name="email"/><br>
+                <label for="tel" class="p">Celular:</label>
+                <input type="tel" name="tel" placeholder="11 1234 1234"/>
+            </section>
+            <section class="contacto__section">
+                <select name="prenda o accesorio personalizado" class="p">
+                    <option value="starter" hidden>Prenda o accesorio</option>
+                    <option value="Bijouterie">Bijouterie</option>
+                    <option value="Barbijo">Barbijo</option>
+                    <option value="Buzo">Buzo</option>
+                    <option value="Remera">Remera</option>
+                 </select>
+            </section>
+            <section class="contacto__section">
+            <div class="mb-3">
+                <label for="Detalles y consultas" class="form-label p">Detalles y consultas:</label>
+                <textarea class="form-control" id="Detalles y consultas" rows="8"></textarea>
+            </div>
+            </section>
+            <section class="contacto__section">
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label p" for="exampleCheck1">Acepta términos y condiciones</label>
+                </div>
+            </section>
+            <section class="contacto__section">   
+                <a href="Error 404.html" class="p">Enviar</a>
+                <input type="reset" value="Cancelar" class="p"/>
+            </section>
+        </form>
+    </section>
+    <footer class="block__footer">
+      <a href="https://www.instagram.com/monocromatico.handmade/?hl=es-la" target="_blank">
+          <img src="Imagenes/icono instagram.webp" alt="seguime en instagram" class="ícono-1">
+      </a>
+      <a href="https://ar.pinterest.com/laurarube2001/_created/" target="_blank">
+          <img src="Imagenes/icono pinterest.webp" alt="seguime en pinterest" class="ícono-2">
+      </a>
+      <a href="https://www.tiktok.com/@monocromatico.handmade?" target="_blank">
+          <img src="Imagenes/icono tiktok.webp" alt="seguime en tiktok" class="ícono-3">
+      </a>
+  </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

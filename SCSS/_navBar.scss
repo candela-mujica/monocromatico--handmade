@@ -1,0 +1,39 @@
+.block__nav{
+    background-color: #a67250;
+    padding: 8px;
+        .nav__menú{
+            padding-right: 14px;
+                #nav__menú:hover{
+                    color: #ded5ca;
+                }
+                #nav__menú.active{
+                    color: #ded5ca;
+                }            
+        }
+        .nav__secciones{
+            background-color: #a67250;
+            padding: 0px;
+        }
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ul li ul {
+visibility: hidden;
+opacity: 0;
+position: absolute;
+display: none;
+z-index:1;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+visibility: visible;
+opacity: 1;
+display: block;
+background-color: #a67250;
+padding: 20px;
+line-height: 4rem;
+}
