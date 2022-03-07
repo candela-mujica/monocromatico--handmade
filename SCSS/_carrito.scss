@@ -1,0 +1,45 @@
+.contenido__carrito{
+    .carrito__titulo{
+        color: #704518;
+        font-weight: 700;
+        line-height: 3rem;
+        font-size: 2.5rem;
+        padding-top: 20px;
+    }
+    .carrito__categorias{
+        color: #704518;
+        font-weight: 500;
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+    .boton__comprar{
+        color: #704518;
+        font-weight: 500;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        border-color: #704518;
+        // cómo acomodarlo a la derecha?
+    }
+}
+
+.agregarAlCarro{
+    color: #704518;
+    font-weight: 500;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    padding: 5px;
+    border-color: #704518;
+}
+
+.agregarAlCarro:hover{
+    color: #ded5ca;
+}
+
+.cantidad{
+    justify-content: space-between;
+}
+
+.itemCantidad{
+    width: 30%;
+    padding-left: 3px;
+}

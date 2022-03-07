@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./CSS/main.css">
     <title>Anillos - Monocromatico Handmade</title>
     <meta name="keywords" content="anillos, alambre, mostacillas">
+    <meta name="description" content="Un emprendimiento de ropa y bijouterie hechas a mano con mucho amor.">
+    <meta name="author" content="Candela Mujica">
 </head>
 <body>
     <!-- inicia nav -->
@@ -67,6 +69,7 @@
             </ul>
           </div>
         </div>
+        <div class="boton"><button type="button" class="btn btn-outline-light carrito">Carrito</button></div>
     </nav>
     <!-- termina nav -->
     <section>
@@ -76,30 +79,32 @@
       <div class="container">
           <div class="row">
             <div class="col">
-              <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+              <div class="card mb-3 secciones__cards cards" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
-                      <img src="Imagenes/Anillo de alambre.webp" class="img-fluid rounded-start" alt="anillo de alambre">
+                      <img src="Imagenes/Anillo de alambre.webp" class="img-fluid rounded-start itemImagen" alt="anillo de alambre">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <p class="card-title secciones__productos">Anillo Alambre</p>
-                        <p class="card-text p">1x$250 <br> 3x$650</p>
+                        <p class="card-title secciones__productos itemNombre">Anillo Alambre</p>
+                        <p class="card-text p itemPrecio">1x$250 <br> 3x$650</p>
+                        <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
                       </div>
                     </div>
                   </div>
               </div>
             </div>
             <div class="col">
-              <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+              <div class="card mb-3 secciones__cards cards" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
-                      <img src="Imagenes/Anillo Mostacillas.webp" class="img-fluid rounded-start" alt="anillo de mostacillas">
+                      <img src="Imagenes/Anillo Mostacillas.webp" class="img-fluid rounded-start itemImagen" alt="anillo de mostacillas">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <p class="card-title secciones__productos">Anillo Mostacillas</p>
-                        <p class="card-text p">1x$100 <br> 3x$250</p>
+                        <p class="card-title secciones__productos itemNombre">Anillo Mostacillas</p>
+                        <p class="card-text p itemPrecio">1x$100 <br> 3x$250</p>
+                        <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
                       </div>
                     </div>
                   </div>
@@ -109,6 +114,62 @@
           </div>
       </div>
     </section>
+    <!-- inicia carro -->
+    <section class="shopping-cart">
+      <div class="container contenido__carrito">
+          <h1 class="text-center carrito__titulo">CARRITO</h1>
+          <hr>
+          <div class="row">
+              <div class="col-6">
+                  <div class="shopping-cart-header">
+                      <p class="carrito__categorias">Producto</p>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="shopping-cart-header">
+                      <p class="text-truncate carrito__categorias precio">Precio</p>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="shopping-cart-header">
+                      <p class="carrito__categorias">Cantidad</p>
+                  </div>
+              </div>
+              <div class="col-2">
+                <div class="shopping-cart-header">
+                    <p class="text-truncate carrito__categorias">Total</p>
+                </div>
+            </div>
+          </div>
+          <!-- empiezan items -->
+          <div class="contenedorItems"></div>
+          <!-- terminan items -->
+          <!-- empieza total -->
+          <div class="row">
+              <div class="col-12">
+                  <div class="shopping-cart-total d-flex align-items-center">
+                      <p class="mb-0 carrito__categorias">Total</p>
+                      <p class="ml-4 mb-0 shoppingCartTotal carrito__categorias">$0</p>
+                      <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+                          <div class="toast-header">
+                              <span>✅</span>
+                              <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="toast-body text-white">
+                              Se aumentó correctamente la cantidad
+                          </div>
+                      </div>
+                      <button class="btn btn-light ml-auto boton__comprar" type="button" data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                  </div>
+              </div>
+          </div>
+          <!-- termina total -->
+      </div>
+    </section>
+    <!-- termina carro -->
     <footer class="block__footer">
       <a href="https://www.instagram.com/monocromatico.handmade/?hl=es-la" target="_blank">
           <img src="Imagenes/icono instagram.webp" alt="seguime en instagram" class="ícono-1">
@@ -122,5 +183,6 @@
   </footer> 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

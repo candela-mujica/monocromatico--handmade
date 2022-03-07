@@ -37,3 +37,25 @@ background-color: #a67250;
 padding: 20px;
 line-height: 4rem;
 }
+
+.boton{
+    padding-right: 20px;
+}
+
+// carrito
+.carrito{
+    color: #40290d;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    padding: 3px;
+    border-color: #40290d;
+}
+
+.carrito:hover{
+    color: #ded5ca;
+}
+
+.carrito.active{
+    color: #ded5ca;
+}   

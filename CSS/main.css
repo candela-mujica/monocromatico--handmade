@@ -65,6 +65,23 @@ ul li ul:hover {
   padding: 20px;
   line-height: 4rem; }
 
+.boton {
+  padding-right: 20px; }
+
+.carrito {
+  color: #40290d;
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  padding: 3px;
+  border-color: #40290d; }
+
+.carrito:hover {
+  color: #ded5ca; }
+
+.carrito.active {
+  color: #ded5ca; }
+
 .contenido__index {
   display: flex;
   flex-direction: row; }
@@ -111,12 +128,53 @@ ul li ul:hover {
   font-size: 2.5rem;
   padding: 5px; }
 
+@media only screen and (max-width: 360px) {
+  .barbijos {
+    width: 160%; } }
+
+.contenido__carrito .carrito__titulo {
+  color: #704518;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 2.5rem;
+  padding-top: 20px; }
+
+.contenido__carrito .carrito__categorias {
+  color: #704518;
+  font-weight: 500;
+  line-height: 2.5rem;
+  font-size: 2rem; }
+
+.contenido__carrito .boton__comprar {
+  color: #704518;
+  font-weight: 500;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  border-color: #704518; }
+
+.agregarAlCarro {
+  color: #704518;
+  font-weight: 500;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  padding: 5px;
+  border-color: #704518; }
+
+.agregarAlCarro:hover {
+  color: #ded5ca; }
+
+.cantidad {
+  justify-content: space-between; }
+
+.itemCantidad {
+  width: 30%;
+  padding-left: 3px; }
+
 .contenido__contacto {
   padding-left: 40px;
   padding-right: 10px;
   padding-bottom: 10px; }
   .contenido__contacto .contacto__form {
-    width: 70%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.4); }
   .contenido__contacto .contacto__h1 {
@@ -125,6 +183,14 @@ ul li ul:hover {
     padding-bottom: 20px; }
   .contenido__contacto .contacto__section {
     padding-bottom: 20px; }
+
+@media only screen and (max-width: 360px) {
+  .contacto__form {
+    width: 90%; } }
+
+@media only screen and (min-width: 361px) {
+  .contacto__form {
+    width: 70%; } }
 
 .block__footer {
   background-color: #a67250;
