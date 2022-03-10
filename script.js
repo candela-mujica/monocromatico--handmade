@@ -1,7 +1,7 @@
 const agregarAlCarroBoton = document.querySelectorAll('.agregarAlCarro');
 
 agregarAlCarroBoton.forEach((botonAgregar) => {
-    botonAgregar.addEventListener('click', agregarAlCarroClick);  
+    botonAgregar.addEventListener('click', agregarAlCarroClick);
 });
 
 const contenedorItems = document.querySelector('.contenedorItems');
@@ -10,6 +10,8 @@ function agregarAlCarroClick(event) {
     const boton = event.target;
     const item = boton.closest('.cards');
     
+    Swal.fire('Agregado!')  
+
     const itemNombre = item.querySelector('.itemNombre').textContent;
     const itemPrecio = item.querySelector('.itemPrecio').textContent;
     const itemImagen = item.querySelector('.itemImagen').src;
