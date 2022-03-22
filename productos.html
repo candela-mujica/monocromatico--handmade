@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Anillos - Monocromatico Handmade</title>
+    <meta name="keywords" content="anillos, alambre, mostacillas">
+    <meta name="description" content="Un emprendimiento de ropa y bijouterie hechas a mano con mucho amor.">
+    <meta name="author" content="Candela Mujica">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg navbar-light block__nav">
+        <div class="container-fluid nav__menú">
+          <a class="navbar-brand" href="index.html">
+          <img src="Imagenes/Logo.webp" alt="logo monocromático handmade" width="40%">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav__menú">
+                <a class="nav-link" id="nav__menú" href="index.html">
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="nav__menú" href="productos.html">
+                  Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav__menú" href="Contacto.html">
+                  Contacto
+                </a>
+              </li>
+              <li class="submenu">
+                <img src="Imagenes/carrito.png" id="img-carrito" class="imagenCarro">
+                <div id="carrito">
+                    <table id="lista-carrito" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p id="total"></p>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- termina nav -->
+    <section id="lista-bebidas" class="container">
+        <h1 class="secciones__h1">Anillos</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Anillo Mostacillas.webp" class="img-fluid rounded-start imagen-curso" alt="anillo de mostacillas">
+                          </div>
+                          <div class="col-md-8 info-card">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Anillo mostacillas</p>
+                              <p class="card-text p precio">$250</p>
+                              <a href="#" class="u-full-width button-primary button input agregar-carrito agregarAlCarro" data-id="1">Agregar al carro</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Anillo de alambre.webp" class="img-fluid rounded-start imagen-curso" alt="anillo de alambre">
+                          </div>
+                          <div class="col-md-8 info-card">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Anillo de alambre</p>
+                              <p class="card-text p precio">$300</p>
+                              <a href="#" class="u-full-width button-primary button input agregar-carrito agregarAlCarro" data-id="2">Agregar al carro</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <h1 class="secciones__h1">Aritos</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Aros Gold Caracol.webp" class="img-fluid rounded-start" alt="aros de caracol">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Aros Gold Caracol</p>
+                              <p class="card-text p">$300</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Aros Moneda.webp" class="img-fluid rounded-start" alt="aros de moneda">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Aros Moneda</h5>
+                              <p class="card-text p">$230</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Aros Gold Caras.webp" class="img-fluid rounded-start" alt="aros de caras">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Aros Gold Caras</p>
+                              <p class="card-text p">$350</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Aros Perlas.webp" class="img-fluid rounded-start" alt="aros de perla">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Aros Perla</h5>
+                              <p class="card-text p">$300</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="secciones__h1">Collares y holders</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Cherry Mostacillas.webp" class="img-fluid rounded-start" alt="collar de mostacillas">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Collar Mostacillas</p>
+                              <p class="card-text p">$410</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Cherry Perlas.webp" class="img-fluid rounded-start" alt="collar cherry perlas harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar Cherry Perlas</h5>
+                              <p class="card-text p">$410</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Perlas.webp" class="img-fluid rounded-start" alt="collar de perlas">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar Perlas</h5>
+                              <p class="card-text p">$500</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Watermelon Sugar.webp" class="img-fluid rounded-start" alt="collar watermelon sugar harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar Watermelon Sugar</h5>
+                              <p class="card-text p">$420</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar TPWK.webp" class="img-fluid rounded-start" alt="collar TPWK harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar TPWK</h5>
+                              <p class="card-text p">$420</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Golden.webp" class="img-fluid rounded-start" alt="collar golden harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Collar Golden</p>
+                              <p class="card-text p">$500</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Letra.webp" class="img-fluid rounded-start" alt="collar de letra">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar Letra</h5>
+                              <p class="card-text p">$380</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Margaritas.webp" class="img-fluid rounded-start" alt="collar de margaritas">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar Margaritas</h5>
+                              <p class="card-text p">$480</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Collar Moneda.webp" class="img-fluid rounded-start" alt="collar de moneda">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Collar Moneda</h5>
+                              <p class="card-text p">$400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Holder.webp" class="img-fluid rounded-start" alt="holders">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Holders</h5>
+                              <p class="card-text p">$380</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="secciones__h1">Pulseras</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Pulsera Cherry.webp" class="img-fluid rounded-start" alt="pulsera cherry harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Pulsera Cherry</p>
+                              <p class="card-text p">$240</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Pulsera con Dije.webp" class="img-fluid rounded-start" alt="pulsera con dije">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Pulsera Dije</h5>
+                              <p class="card-text p">$300</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Pulsera TPWK.webp" class="img-fluid rounded-start" alt="pulsera TPWK harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Pulsera TPWK</h5>
+                              <p class="card-text p">$290</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Pulsera Golden.webp" class="img-fluid rounded-start" alt="pulsera golden harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Pulsera Golden</p>
+                              <p class="card-text p">$290</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Pulsera con Inicial.webp" class="img-fluid rounded-start" alt="pulsera con letra">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Pulsera letra</h5>
+                              <p class="card-text p">$280</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Pulsera Fine Line.webp" class="img-fluid rounded-start" alt="pulsera fine line harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Pulsera Fine Line</h5>
+                              <p class="card-text p">$250</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="secciones__h1">Barbijos</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards barbijos" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Barbijo Bordado Flores.webp" class="img-fluid rounded-start" alt="barbijo bordado con flores">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Barbijo Bordado Flores</p>
+                              <p class="card-text p">$600</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="secciones__h1">Remeras</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Abbey Road.webp" class="img-fluid rounded-start" alt="remera abbey road">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Remera Abbey Road</p>
+                              <p class="card-text p">$1200</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Call Me By Your Name.webp" class="img-fluid rounded-start" alt="remera call me by your name">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Call Me By Your Name</h5>
+                              <p class="card-text p">$1300</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Caras.webp" class="img-fluid rounded-start" alt="remera caras">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Caras</h5>
+                              <p class="card-text p">$1350</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Festival Louis.webp" class="img-fluid rounded-start" alt="remera festival louis tomlinson">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Festival Louis</h5>
+                              <p class="card-text p">$1550</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Fine Line.webp" class="img-fluid rounded-start" alt="remera fine line harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Fine Line</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Louis Tomlinson.webp" class="img-fluid rounded-start" alt="remera louis tomlinson">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Louis Tomlinson</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Miguel Angel.webp" class="img-fluid rounded-start" alt="remera manos miguel ángel">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Miguel Ángel</h5>
+                              <p class="card-text p">$1200</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Minimalista Espejo.webp" class="img-fluid rounded-start" alt="remera minimalista espejo">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Minimalista Espejo</h5>
+                              <p class="card-text p">$1100</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Only The Brave.webp" class="img-fluid rounded-start" alt="remera only the brave louis tomlinson">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Only The Brave</h5>
+                              <p class="card-text p">$1600</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Rachel.webp" class="img-fluid rounded-start" alt="remera rachel green friends save the drama for your mama">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Rachel</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Walls.webp" class="img-fluid rounded-start" alt="remera walls louis tomlinson">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Walls</h5>
+                              <p class="card-text p">$1600</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Flowers.webp" class="img-fluid rounded-start" alt="remera no flowers no rain">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Remera Flowers</p>
+                              <p class="card-text p">$1300</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Freddie Mercury.webp" class="img-fluid rounded-start" alt="remera freddie mercury">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Freddie Mercury</h5>
+                              <p class="card-text p">$1300</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Harry Guitarra.webp" class="img-fluid rounded-start" alt="remera harry styles guitarra">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Harry Guitarra</h5>
+                              <p class="card-text p">$1700</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Heartbreak Weather.webp" class="img-fluid rounded-start" alt="remera heartbreak weather niall horan">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Heartbreak Weather</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Just Hold On.webp" class="img-fluid rounded-start" alt="remera just hold on louis tomlinson">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Just Hold On</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Louis Walls.webp" class="img-fluid rounded-start" alt="remera walls louis tomlinson">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Louis Walls</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Marvel.webp" class="img-fluid rounded-start" alt="remera marvel">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Marvel</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera My Life Is Crap.webp" class="img-fluid rounded-start" alt="remera my life is crap harry styles">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera My Life Is Crap</h5>
+                              <p class="card-text p">$1600</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Nobody is Listening.webp" class="img-fluid rounded-start" alt="remera nobody is listening zayn malik">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Nobody is Listening</h5>
+                              <p class="card-text p">$1500</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Remera Sol.webp" class="img-fluid rounded-start" alt="remera sol">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title secciones__productos">Remera Sol</h5>
+                              <p class="card-text p">$1400</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1 class="secciones__h1">Buzos</h1>
+        <div class="contenido__secciones">
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Buzo Heather.webp" class="img-fluid rounded-start" alt="buzo heather conan gray">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Buzo Heather</p>
+                              <p class="card-text p">$2700</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card mb-3 secciones__cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="Imagenes/Buzo Miguel Angel.webp" class="img-fluid rounded-start" alt="buzo manos de miguel ángel">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <p class="card-title secciones__productos">Buzo Miguel Ángel</p>
+                              <p class="card-text p">$2700</p>
+                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <footer class="block__footer">
+      <a href="https://www.instagram.com/monocromatico.handmade/?hl=es-la" target="_blank">
+          <img src="Imagenes/icono instagram.webp" alt="seguime en instagram" class="ícono-1">
+      </a>
+      <a href="https://ar.pinterest.com/laurarube2001/_created/" target="_blank">
+          <img src="Imagenes/icono pinterest.webp" alt="seguime en pinterest" class="ícono-2">
+      </a>
+      <a href="https://www.tiktok.com/@monocromatico.handmade?" target="_blank">
+          <img src="Imagenes/icono tiktok.webp" alt="seguime en tiktok" class="ícono-3">
+      </a>
+  </footer> 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
