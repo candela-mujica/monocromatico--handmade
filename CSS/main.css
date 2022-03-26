@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:wght@500;700&display=swap");
-.h1, .secciones__h1, .contenido__index .index__h1, .contenido__contacto .contacto__h1, .contenido__error .error__h1 {
+.h1, .secciones__h1, .index__h1, .contenido__contacto .contacto__h1, .contenido__error .error__h1 {
   color: #975c26;
   font-weight: 700;
   line-height: 4.5rem;
@@ -34,7 +34,8 @@ body {
 
 .block__nav {
   background-color: #a67250;
-  padding: 8px; }
+  padding: 8px;
+  justify-content: space-between; }
   .block__nav .nav__menú {
     padding-right: 14px; }
     .block__nav .nav__menú #nav__menú:hover {
@@ -67,26 +68,9 @@ ul li ul:hover {
 .boton {
   padding-right: 20px; }
 
-.carrito {
-  color: #40290d;
-  font-weight: 500;
-  line-height: 2rem;
-  font-size: 1.8rem;
-  padding: 3px;
-  border-color: #40290d; }
-
-.carrito:hover {
-  color: #ded5ca; }
-
-.carrito.active {
-  color: #ded5ca; }
-
 .contenido__index {
   display: flex;
   flex-direction: row; }
-  .contenido__index .index__h1 {
-    padding-bottom: 10px;
-    padding-left: 20px; }
   .contenido__index .index__texto {
     padding-right: 10px;
     padding-left: 20px; }
@@ -95,6 +79,10 @@ ul li ul:hover {
     padding-bottom: 10px; }
   .contenido__index .index__video {
     margin-bottom: -4px; }
+
+.index__h1 {
+  padding-bottom: 10px;
+  padding-left: 20px; }
 
 @media only screen and (max-width: 1023px) {
   .contenido__index {
@@ -131,6 +119,48 @@ ul li ul:hover {
   .barbijos {
     width: 160%; } }
 
+.contenido__carro {
+  color: #704518;
+  position: relative; }
+  .contenido__carro .carro__imagen {
+    padding-right: 30px;
+    padding-bottom: 10px; }
+  .contenido__carro .carro__titulo {
+    padding-right: 30px;
+    padding-bottom: 10px; }
+  .contenido__carro .carro__precio {
+    padding-right: 30px;
+    padding-bottom: 10px; }
+  .contenido__carro .carro__cantidad {
+    padding-right: 30px;
+    padding-bottom: 10px; }
+  .contenido__carro .carro__cantida {
+    padding-bottom: 10px; }
+  .contenido__carro .carro__subtotal {
+    padding-right: 30px;
+    padding-bottom: 10px; }
+
+.carroTotal {
+  color: #704518;
+  text-align: right;
+  padding-right: 10px; }
+
+.dibujoCarro {
+  width: 10%; }
+
+.borrar-producto {
+  text-decoration: none;
+  color: red; }
+
+.borrar-producto:hover {
+  color: red; }
+
+.button {
+  color: red; }
+
+.button:hover {
+  color: red; }
+
 .agregarAlCarro {
   color: #704518;
   font-weight: 500;
@@ -159,8 +189,12 @@ ul li ul:hover {
   min-height: 400px;
   min-width: 300px; }
 
-.imagenCarro {
-  width: 10%; }
+@media only screen and (max-width: 780px) and (min-width: 648px) {
+  #carrito {
+    display: block;
+    width: 610px;
+    height: auto;
+    text-align: center; } }
 
 .contenido__contacto {
   padding-left: 40px;

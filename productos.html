@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="./CSS/main.css">
-    <title>Anillos - Monocromatico Handmade</title>
-    <meta name="keywords" content="anillos, alambre, mostacillas">
+    <title>Productos - Monocromatico Handmade</title>
+    <meta name="keywords" content="anillos, remeras, barbijos">
     <meta name="description" content="Un emprendimiento de ropa y bijouterie hechas a mano con mucho amor.">
     <meta name="author" content="Candela Mujica">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -17,56 +17,56 @@
 <body>
     <!-- inicia nav -->
     <nav class="navbar navbar-expand-lg navbar-light block__nav">
-        <div class="container-fluid nav__menú">
-          <a class="navbar-brand" href="index.html">
+      <div class="container-fluid nav__menú">
+        <a class="navbar-brand" href="index.html">
           <img src="Imagenes/Logo.webp" alt="logo monocromático handmade" width="40%">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item nav__menú">
-                <a class="nav-link" id="nav__menú" href="index.html">
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="nav__menú" href="productos.html">
-                  Productos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="nav__menú" href="Contacto.html">
-                  Contacto
-                </a>
-              </li>
-              <li class="submenu">
-                <img src="Imagenes/carrito.png" id="img-carrito" class="imagenCarro">
-                <div id="carrito">
-                    <table id="lista-carrito" class="u-full-width">
-                        <thead>
-                            <tr>
-                                <th>Imagen</th>
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Subtotal</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                    <p id="total"></p>
-                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item nav__menú">
+              <a class="nav-link" id="nav__menú" href="index.html">
+                Inicio
+              </a>
             </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link active" id="nav__menú" href="productos.html">
+                Productos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav__menú" href="Contacto.html">
+                Contacto
+              </a>
+            </li>
+            <li class="submenu nav__menú">
+              <img src="Imagenes/carrito.png" id="img-carrito" class="dibujoCarro">
+              <div id="carrito">
+                  <table id="lista-carrito" class="u-full-width contenido__carro">
+                      <thead>
+                          <tr>
+                              <th class="carro__imagen">Imagen</th>
+                              <th class="carro__titulo">Nombre</th>
+                              <th class="carro__precio">Precio</th>
+                              <th class="carro__cantidad">Cantidad</th>
+                              <th class="carro__subtotal">Subtotal</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+                  <p id="total" class="carroTotal"></p>
+                  <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar carro</a>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- termina nav -->
-    <section id="lista-bebidas" class="container">
+    <section id="lista-productos" class="container">
         <h1 class="secciones__h1">Anillos</h1>
         <div class="contenido__secciones">
             <div class="container">
@@ -108,22 +108,22 @@
             </div>
         </div>
     </section>
-    <!-- <section>
+    <section id="lista-productos" class="container">
         <h1 class="secciones__h1">Aritos</h1>
         <div class="contenido__secciones">
             <div class="container">
                 <div class="row">
-                  <div class="col">
+                  <div class="col">           
                     <div class="card mb-3 secciones__cards" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="Imagenes/Aros Gold Caracol.webp" class="img-fluid rounded-start" alt="aros de caracol">
+                            <img src="Imagenes/Aros Gold Caracol.webp" class="img-fluid rounded-start imagen-curso" alt="aros de caracol">
                           </div>
-                          <div class="col-md-8">
+                          <div class="col-md-8 info-card">
                             <div class="card-body">
                               <p class="card-title secciones__productos">Aros Gold Caracol</p>
                               <p class="card-text p">$300</p>
-                              <button type="button" class="btn btn-outline-light agregarAlCarro">Agregar al carro</button>
+                              <a href="#" class="u-full-width button-primary button input agregar-carrito agregarAlCarro" data-id="3">Agregar al carro</a>
                             </div>
                           </div>
                         </div>
@@ -807,7 +807,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <footer class="block__footer">
       <a href="https://www.instagram.com/monocromatico.handmade/?hl=es-la" target="_blank">
           <img src="Imagenes/icono instagram.webp" alt="seguime en instagram" class="ícono-1">

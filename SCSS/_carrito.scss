@@ -1,26 +1,60 @@
-// .contenido__carrito{
-//     .carrito__titulo{
-//         color: #704518;
-//         font-weight: 700;
-//         line-height: 3rem;
-//         font-size: 2.5rem;
-//         padding-top: 20px;
-//     }
-//     .carrito__categorias{
-//         color: #704518;
-//         font-weight: 500;
-//         line-height: 2.5rem;
-//         font-size: 2rem;
-//     }
-//     .boton__comprar{
-//         color: #704518;
-//         font-weight: 500;
-//         line-height: 2rem;
-//         font-size: 1.5rem;
-//         border-color: #704518;
-//     }
-// }
+.contenido__carro{
+    color: #704518;
+    position: relative;
+    .carro__imagen{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    } 
+    .carro__titulo{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }   
+    .carro__precio{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+    .carro__cantidad{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    } 
+    .carro__cantida{
+        padding-bottom: 10px;
+    }
+    .carro__subtotal{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }   
+}
 
+.carroTotal{
+    color: #704518;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.dibujoCarro{
+    width: 10%;
+}
+
+//eliminar productos
+.borrar-producto{
+    text-decoration: none;
+    color: red;
+}
+
+.borrar-producto:hover{
+    color: red;
+}
+
+.button{
+    color: red;   
+}
+
+.button:hover{
+    color: red;   
+}
+
+//botón agregar
 .agregarAlCarro{
     color: #704518;
     font-weight: 500;
@@ -34,15 +68,7 @@
     color: #40290d;
 }
 
-// .cantidad{
-//     justify-content: space-between;
-// }
-
-// .itemCantidad{
-//     width: 30%;
-//     padding-left: 3px;
-// }
-
+//carrito como hover
 .submenu {
     position: relative;
 }
@@ -62,6 +88,12 @@
     min-width: 300px;
 }
 
-.imagenCarro{
-    width: 10%;
+//responsive
+@media only screen and (max-width: 780px) and (min-width: 648px){
+    #carrito{
+        display: block;
+        width: 610px;
+        height: auto;
+        text-align: center;
+    }
 }
