@@ -148,6 +148,12 @@ ul li ul:hover {
 .dibujoCarro {
   width: 10%; }
 
+.finalizar {
+  color: #704518; }
+
+.finalizar:hover {
+  color: #40290d; }
+
 .borrar-producto {
   text-decoration: none;
   color: red; }
@@ -156,7 +162,8 @@ ul li ul:hover {
   color: red; }
 
 .button {
-  color: red; }
+  color: red;
+  padding-left: 20px; }
 
 .button:hover {
   color: red; }
@@ -186,15 +193,10 @@ ul li ul:hover {
   z-index: 1;
   background-color: white;
   padding: 20px;
-  min-height: 400px;
-  min-width: 300px; }
-
-@media only screen and (max-width: 780px) and (min-width: 648px) {
-  #carrito {
-    display: block;
-    width: 610px;
-    height: auto;
-    text-align: center; } }
+  min-height: 300px;
+  min-width: 300px;
+  max-height: 500px;
+  overflow: scroll; }
 
 .contenido__contacto {
   padding-left: 40px;

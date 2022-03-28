@@ -35,7 +35,7 @@ function agregarProducto(e) {
             title: 'Agregado!',
             showConfirmButton: false,
             timer: 1200,
-          })
+        })
     }
 }
 
@@ -44,7 +44,7 @@ function eliminarProducto(e) {
         const productoId = e.target.getAttribute('data-id');
         articulosCarrito = articulosCarrito.filter(producto => producto.id !== productoId);
         console.clear();
-        console.log(articulosCarrito); 
+        console.log(articulosCarrito);
         carritoHTML();
     }
 }
